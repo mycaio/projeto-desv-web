@@ -1,0 +1,11 @@
+.foto-minha img{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.fundos img{
+    width: 220px;
+    height: 190px;
+}
