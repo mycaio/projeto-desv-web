@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Facilita o controle do tamanho dos elementos */
+    background-color: none;
+}
 html, body {
     height: 100%;
     margin: 0;
@@ -9,14 +15,16 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 
-.cabecalio{
+/*------------------------------------------------------------*/
+header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #f9f6f6;
+    background-color: #f3ecec;
 }
 
 .navegacao{
@@ -31,19 +39,53 @@ body {
     margin-right: 20px;
 }
 
+/*------------------------------------------------------------*/
+main {
+    flex: 1; /* Garante que o main ocupe o espaço restante */
+    overflow-y: auto; /* Permite rolagem dentro do main se necessário */
+    
+
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+   
+    align-content: center;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center;
+}
+
+hr {
+    width: 80%; /* Define a largura da linha */
+    height: 2px; /* Define a espessura da linha */
+    background-color: #ccc; /* Define a cor da linha */
+    border: none; /* Remove a borda padrão */
+     /* Centraliza a linha e adiciona margem acima e abaixo */
+}
+
+.conteudos{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
 .fundos {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap; /* Permite que as imagens quebrem linha se necessário */
+    /* Permite que as imagens quebrem linha se necessário */
     justify-content: space-around; /* Espaçamento uniforme entre as imagens */
     gap: 10px; /* Espaçamento entre as imagens */
+    padding: 0px 20px;
 }
 
 .fundos img {
-    width: 20%; /* A largura será 20% do elemento pai */
-    height: auto; /* Mantém a proporção da imagem */
-    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do container */
-    object-fit: cover; /* Impede distorção da imagem */
+    width: 220px;
+    height: 190px; 
+    
 }
 
 @media (max-width: 768px) {
@@ -57,24 +99,8 @@ body {
         width: 80%; /* Imagens ainda maiores em telas bem pequenas */
     }
 }
-section{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
 
-.conteudos{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-main {
-    flex: 1; /* Garante que o main ocupe o espaço restante */
-    overflow-y: auto; /* Permite rolagem dentro do main se necessário */
-}
-
+/*------------------------------------------------------------*/
 footer {
     background-color: #f9f6f6;
     padding: 10px;
