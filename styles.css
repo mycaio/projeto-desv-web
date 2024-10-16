@@ -1,11 +1,82 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f6f6;
+}
+
+.navegacao{
+    padding: 20px;
+}
+
 .foto-minha img{
     width: 52px;
     height: 52px;
     border-radius: 50%;
     object-fit: cover;
+    margin-right: 20px;
 }
 
-.fundos img{
-    width: 220px;
-    height: 190px;
+.fundos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; /* Permite que as imagens quebrem linha se necessário */
+    justify-content: space-around; /* Espaçamento uniforme entre as imagens */
+    gap: 10px; /* Espaçamento entre as imagens */
+}
+
+.fundos img {
+    width: 20%; /* A largura será 20% do elemento pai */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do container */
+    object-fit: cover; /* Impede distorção da imagem */
+}
+
+@media (max-width: 768px) {
+    .fundos img {
+        width: 40%; /* Imagens maiores em telas pequenas */
+    }
+}
+
+@media (max-width: 480px) {
+    .fundos img {
+        width: 80%; /* Imagens ainda maiores em telas bem pequenas */
+    }
+}
+section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conteudos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    flex: 1; /* Garante que o main ocupe o espaço restante */
+    overflow-y: auto; /* Permite rolagem dentro do main se necessário */
+}
+
+footer {
+    background-color: #f9f6f6;
+    padding: 10px;
+    text-align: center;
 }
