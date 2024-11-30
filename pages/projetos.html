@@ -3,21 +3,40 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio caio :)</title>
+    <title>Portifolio caio</title>
+    <link rel="stylesheet" href="stylesProjetos.css">
 </head>
 <body>
-    <header> <!--cabeçalio--> 
+
+    <header class="cabecalio"> 
         <nav>
-            <a href="../index.html">Sobre mim</a>
-            <a href="contatos.html">Contatos</a>
-            <a href="projetos.html">Projetos</a>
+            <a class="navegacao" href="../index.html">Sobre mim</a>
+            <a class="navegacao" href="contatos.html">Contatos</a>
+            <a class="navegacao" href="projetos.html">Projetos</a>
         </nav>
+        <div class="foto-minha">
+            <img src="../foto-minha.png" alt="foto Do Caio">
+        </div>
     </header>
+
     <main>
+        <section>
+            <h1 class="titulo">Projetos</h1>
+            <hr class="titulo_linha">
 
+            <div class="conteudos">
+                
+                <div class="fundos" id="projetos-container"></div>
+                
+            </div> 
+        </section>
     </main>
-    <footer>
 
+    <footer>
+        <small>&copy;Copyright 2024, caio renan</small>
     </footer>
+
+    <script src="scriptProjetos.js"></script>
+
 </body>
 </html>

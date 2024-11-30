@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Facilita o controle do tamanho dos elementos */
+    background-color: none;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+/*------------------------------------------------------------*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3ecec;
+}
+
+.navegacao{
+    padding: 20px;
+    font-family: 'Roboto', sans-serif; /* A mesma fonte usada nos títulos */
+    font-size: 1.1rem; /* Tamanho adequado para a navegação */
+    font-weight: bold; /* Deixar a navegação com maior destaque */
+    color: #333; /* Cor de texto mais suave */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    transition: color 0.3s ease, transform 0.3s ease; /* Efeito suave para hover */
+}
+
+.navegacao:hover {
+    color: #0077cc; /* Altere para a cor desejada ao passar o mouse */
+    transform: scale(1.1); /* Leve aumento no tamanho do texto ao passar o mouse */
+}
+
+.foto-minha img{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/*------------------------------------------------------------*/
+main {
+    flex: 1; /* Garante que o main ocupe o espaço restante */
+    overflow-y: auto; /* Permite rolagem dentro do main se necessário */
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center;
+}
+
+hr {
+    width: 80%; /* Define a largura da linha */
+    height: 2px; /* Define a espessura da linha */
+    background-color: #ccc; /* Define a cor da linha */
+    border: none; /* Remove a borda padrão */
+    margin: 20px;
+}
+
+.conteudos{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.fundos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    gap: 10px; 
+    padding: 0px 20px;
+}
+
+.fundos img {
+    width: 70px;
+    height: 70px; 
+}
+
+@media (max-width: 768px) {
+    .fundos img {
+        width: 40%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .fundos img {
+        width: 80%; 
+    }
+}
+
+.projetos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.projetos a {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1rem; 
+    color: #333; 
+    text-decoration: none; 
+    font-weight: bold; 
+    padding: 5px 10px; 
+    border: 2px solid transparent;
+    border-radius: 5px; 
+    transition: all 0.3s ease; 
+}
+
+.projetos a:hover {
+    color: #fff; 
+    background-color: #0077cc; 
+    border-color: #0077cc;
+    transform: scale(1.05); 
+}
+
+/*------------------------------------------------------------*/
+
+h3 {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    margin-bottom: 10px;
+}
+
+
+p {
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.1rem; 
+    line-height: 1.6; 
+    color: #333; 
+    margin-bottom: 15px;
+}
+
+/*------------------------------------------------------------*/
+footer {
+    background-color: #f9f6f6;
+    padding: 10px;
+    text-align: center;
+}
